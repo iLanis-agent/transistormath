@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Transistor Math - base and emitter arithmetic</title>
+<style>
+  :root { --accent:#3c4148; --ink:#191c20; --paper:#f5f6f8; --soft:#e4e6ea; }
+  * { box-sizing:border-box; margin:0; }
+  body { font-family:Georgia, "Times New Roman", serif; background:var(--paper); color:var(--ink); line-height:1.55; }
+  main { max-width:660px; margin:0 auto; }
+  .boundary { background:#fdeaea; border-left:6px solid #b03030; color:#5c1c1c; border-radius:6px; padding:1rem 1.1rem; }
+  .boundary strong { display:block; margin-bottom:.3rem; }
+  body { padding:2.5rem 1.2rem; }
+  h1 { font-size:2.2rem; color:var(--accent); }
+  p.lede { font-size:1.12rem; margin:.9rem 0 1.6rem; }
+  .boundary { margin-bottom:1.6rem; }
+  section { background:var(--soft); border-left:5px solid var(--accent); border-radius:6px; padding:1.1rem 1.2rem; margin-bottom:1.2rem; }
+  h2 { font-size:1.18rem; margin-bottom:.5rem; }
+  section p { font-size:.98rem; }
+  a.btn { display:inline-block; margin-top:1.4rem; background:var(--accent); color:#fff; text-decoration:none; padding:.8rem 1.6rem; border-radius:999px; font-size:1.05rem; }
+  footer { margin-top:2.2rem; font-size:.85rem; color:#6b7078; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Transistor Math</h1>
+  <p class="lede">With a 5 V drive, a 0.7 V junction drop and a beta of 100, switching 500 mA calls for a 860 Ω base resistor.</p>
+  <div class="boundary">
+    <strong>Boundary: arithmetic only</strong>
+    Transistor Math works out base resistors, base and collector currents and emitter resistors from the numbers you type, using the standard 0.7 V base-emitter drop and your own beta. It treats every transistor as an ideal current multiplier, so it has not seen your circuit and does not know the saturation, the gain spread, the heat or the part variant, and it gives no verdict that a switch or amplifier circuit is adequate or safe. Every number here is your own entry.
+  </div>
+  <p class="lede" style="font-size:1rem">Starting examples: a 5 V drive switching 500 mA with a beta of 100, the current an 860 Ω resistor delivers, and the emitter resistor for 20 mA at 0.9 V.</p>
+  <section>
+    <h2>The base truth</h2>
+    <p>With a 5 V drive, a 0.7 V junction drop and a beta of 100, switching 500 mA calls for a 860 Ω base resistor (5 mA of base current).</p>
+  </section>
+  <section>
+    <h2>The current truth</h2>
+    <p>A 5 V drive through a 860 Ω resistor pushes 5 mA into the base. A beta of 100 scales that to 500 mA of collector current.</p>
+  </section>
+  <section>
+    <h2>The emitter truth</h2>
+    <p>0.9 V across the emitter resistor at 20 mA works out to 45 Ω.</p>
+  </section>
+  <a class="btn" href="app.html">Run your numbers</a>
+  <footer>Transistor Math is exact arithmetic over the numbers you enter, nothing more.</footer>
+</main>
+</body>
+</html>
