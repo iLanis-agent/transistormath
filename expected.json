@@ -1,0 +1,898 @@
+{
+ "cases": [
+  {
+   "fn": "base",
+   "args": [
+    "5",
+    "100",
+    "500"
+   ],
+   "expect": "With a 5 V drive, a 0.7 V junction drop and a beta of 100, switching 500 mA calls for a 860 Ω base resistor (5 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "5",
+    "860",
+    "100"
+   ],
+   "expect": "A 5 V drive through a 860 Ω resistor pushes 5 mA into the base. A beta of 100 scales that to 500 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "0.9",
+    "20"
+   ],
+   "expect": "0.9 V across the emitter resistor at 20 mA works out to 45 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "7.36",
+    "452",
+    "94295.34"
+   ],
+   "expect": "With a 7.36 V drive, a 0.7 V junction drop and a beta of 452, switching 94295.34 mA calls for a 32 Ω base resistor (208.62 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "7.36",
+    "1817367",
+    "452"
+   ],
+   "expect": "A 7.36 V drive through a 1817367 Ω resistor pushes 0 mA into the base. A beta of 452 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "0.59",
+    "57810.34"
+   ],
+   "expect": "0.59 V across the emitter resistor at 57810.34 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "54.61",
+    "720",
+    "25884.11"
+   ],
+   "expect": "With a 54.61 V drive, a 0.7 V junction drop and a beta of 720, switching 25884.11 mA calls for a 1500 Ω base resistor (35.95 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "54.61",
+    "5964317",
+    "720"
+   ],
+   "expect": "A 54.61 V drive through a 5964317 Ω resistor pushes 0.01 mA into the base. A beta of 720 scales that to 7.2 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "10.39",
+    "58602.61"
+   ],
+   "expect": "10.39 V across the emitter resistor at 58602.61 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "12.38",
+    "522",
+    "93578.32"
+   ],
+   "expect": "With a 12.38 V drive, a 0.7 V junction drop and a beta of 522, switching 93578.32 mA calls for a 65 Ω base resistor (179.27 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "12.38",
+    "4039773",
+    "522"
+   ],
+   "expect": "A 12.38 V drive through a 4039773 Ω resistor pushes 0 mA into the base. A beta of 522 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "80.75",
+    "79265.69"
+   ],
+   "expect": "80.75 V across the emitter resistor at 79265.69 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "66.15",
+    "678",
+    "77296.74"
+   ],
+   "expect": "With a 66.15 V drive, a 0.7 V junction drop and a beta of 678, switching 77296.74 mA calls for a 574 Ω base resistor (114.01 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "66.15",
+    "8289288",
+    "678"
+   ],
+   "expect": "A 66.15 V drive through a 8289288 Ω resistor pushes 0.01 mA into the base. A beta of 678 scales that to 6.78 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "6.5",
+    "56784.66"
+   ],
+   "expect": "6.5 V across the emitter resistor at 56784.66 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "64.62",
+    "963",
+    "81278.06"
+   ],
+   "expect": "With a 64.62 V drive, a 0.7 V junction drop and a beta of 963, switching 81278.06 mA calls for a 757 Ω base resistor (84.4 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "64.62",
+    "6075612",
+    "963"
+   ],
+   "expect": "A 64.62 V drive through a 6075612 Ω resistor pushes 0.01 mA into the base. A beta of 963 scales that to 9.63 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "38.87",
+    "11904.85"
+   ],
+   "expect": "38.87 V across the emitter resistor at 11904.85 mA works out to 3 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "65.49",
+    "549",
+    "10753.83"
+   ],
+   "expect": "With a 65.49 V drive, a 0.7 V junction drop and a beta of 549, switching 10753.83 mA calls for a 3308 Ω base resistor (19.59 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "65.49",
+    "1610724",
+    "549"
+   ],
+   "expect": "A 65.49 V drive through a 1610724 Ω resistor pushes 0.04 mA into the base. A beta of 549 scales that to 21.96 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "4.81",
+    "48434.54"
+   ],
+   "expect": "4.81 V across the emitter resistor at 48434.54 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "25.75",
+    "94",
+    "27193.02"
+   ],
+   "expect": "With a 25.75 V drive, a 0.7 V junction drop and a beta of 94, switching 27193.02 mA calls for a 87 Ω base resistor (289.29 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "25.75",
+    "9617941",
+    "94"
+   ],
+   "expect": "A 25.75 V drive through a 9617941 Ω resistor pushes 0 mA into the base. A beta of 94 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "13.04",
+    "48032.86"
+   ],
+   "expect": "13.04 V across the emitter resistor at 48032.86 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "23.34",
+    "627",
+    "32236.02"
+   ],
+   "expect": "With a 23.34 V drive, a 0.7 V junction drop and a beta of 627, switching 32236.02 mA calls for a 440 Ω base resistor (51.41 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "23.34",
+    "3849866",
+    "627"
+   ],
+   "expect": "A 23.34 V drive through a 3849866 Ω resistor pushes 0.01 mA into the base. A beta of 627 scales that to 6.27 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "13.97",
+    "95932.97"
+   ],
+   "expect": "13.97 V across the emitter resistor at 95932.97 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "75.36",
+    "348",
+    "32259.27"
+   ],
+   "expect": "With a 75.36 V drive, a 0.7 V junction drop and a beta of 348, switching 32259.27 mA calls for a 805 Ω base resistor (92.7 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "75.36",
+    "5118548",
+    "348"
+   ],
+   "expect": "A 75.36 V drive through a 5118548 Ω resistor pushes 0.01 mA into the base. A beta of 348 scales that to 3.48 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "41.41",
+    "71225.59"
+   ],
+   "expect": "41.41 V across the emitter resistor at 71225.59 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "68.64",
+    "627",
+    "39090.34"
+   ],
+   "expect": "With a 68.64 V drive, a 0.7 V junction drop and a beta of 627, switching 39090.34 mA calls for a 1090 Ω base resistor (62.35 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "68.64",
+    "6235584",
+    "627"
+   ],
+   "expect": "A 68.64 V drive through a 6235584 Ω resistor pushes 0.01 mA into the base. A beta of 627 scales that to 6.27 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "15.63",
+    "1872.99"
+   ],
+   "expect": "15.63 V across the emitter resistor at 1872.99 mA works out to 8 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "9.76",
+    "909",
+    "697.97"
+   ],
+   "expect": "With a 9.76 V drive, a 0.7 V junction drop and a beta of 909, switching 697.97 mA calls for a 11799 Ω base resistor (0.77 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "9.76",
+    "4890357",
+    "909"
+   ],
+   "expect": "A 9.76 V drive through a 4890357 Ω resistor pushes 0 mA into the base. A beta of 909 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "25.64",
+    "21215.83"
+   ],
+   "expect": "25.64 V across the emitter resistor at 21215.83 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "7.29",
+    "601",
+    "74030.98"
+   ],
+   "expect": "With a 7.29 V drive, a 0.7 V junction drop and a beta of 601, switching 74030.98 mA calls for a 53 Ω base resistor (123.18 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "7.29",
+    "4190045",
+    "601"
+   ],
+   "expect": "A 7.29 V drive through a 4190045 Ω resistor pushes 0 mA into the base. A beta of 601 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "37.76",
+    "56028.67"
+   ],
+   "expect": "37.76 V across the emitter resistor at 56028.67 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "79.05",
+    "83",
+    "20459.05"
+   ],
+   "expect": "With a 79.05 V drive, a 0.7 V junction drop and a beta of 83, switching 20459.05 mA calls for a 318 Ω base resistor (246.49 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "79.05",
+    "4355634",
+    "83"
+   ],
+   "expect": "A 79.05 V drive through a 4355634 Ω resistor pushes 0.02 mA into the base. A beta of 83 scales that to 1.66 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "77.46",
+    "12048.64"
+   ],
+   "expect": "77.46 V across the emitter resistor at 12048.64 mA works out to 6 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "84.05",
+    "926",
+    "97649.01"
+   ],
+   "expect": "With a 84.05 V drive, a 0.7 V junction drop and a beta of 926, switching 97649.01 mA calls for a 790 Ω base resistor (105.45 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "84.05",
+    "1543707",
+    "926"
+   ],
+   "expect": "A 84.05 V drive through a 1543707 Ω resistor pushes 0.05 mA into the base. A beta of 926 scales that to 46.3 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "42.56",
+    "20361.29"
+   ],
+   "expect": "42.56 V across the emitter resistor at 20361.29 mA works out to 2 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "1.33",
+    "29",
+    "57440.77"
+   ],
+   "expect": "With a 1.33 V drive, a 0.7 V junction drop and a beta of 29, switching 57440.77 mA calls for a 0 Ω base resistor (1980.72 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "1.33",
+    "4235244",
+    "29"
+   ],
+   "expect": "A 1.33 V drive through a 4235244 Ω resistor pushes 0 mA into the base. A beta of 29 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "31.59",
+    "55993.48"
+   ],
+   "expect": "31.59 V across the emitter resistor at 55993.48 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "34.22",
+    "306",
+    "66119.68"
+   ],
+   "expect": "With a 34.22 V drive, a 0.7 V junction drop and a beta of 306, switching 66119.68 mA calls for a 155 Ω base resistor (216.08 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "34.22",
+    "18116",
+    "306"
+   ],
+   "expect": "A 34.22 V drive through a 18116 Ω resistor pushes 1.85 mA into the base. A beta of 306 scales that to 566.1 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "54.1",
+    "45633.3"
+   ],
+   "expect": "54.1 V across the emitter resistor at 45633.3 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "63.78",
+    "979",
+    "78219.44"
+   ],
+   "expect": "With a 63.78 V drive, a 0.7 V junction drop and a beta of 979, switching 78219.44 mA calls for a 790 Ω base resistor (79.9 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "63.78",
+    "8803209",
+    "979"
+   ],
+   "expect": "A 63.78 V drive through a 8803209 Ω resistor pushes 0.01 mA into the base. A beta of 979 scales that to 9.79 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "11.54",
+    "32161.42"
+   ],
+   "expect": "11.54 V across the emitter resistor at 32161.42 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "18.08",
+    "237",
+    "72009.87"
+   ],
+   "expect": "With a 18.08 V drive, a 0.7 V junction drop and a beta of 237, switching 72009.87 mA calls for a 57 Ω base resistor (303.84 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "18.08",
+    "6344673",
+    "237"
+   ],
+   "expect": "A 18.08 V drive through a 6344673 Ω resistor pushes 0 mA into the base. A beta of 237 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "24.41",
+    "65216.38"
+   ],
+   "expect": "24.41 V across the emitter resistor at 65216.38 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "79.65",
+    "961",
+    "12403.33"
+   ],
+   "expect": "With a 79.65 V drive, a 0.7 V junction drop and a beta of 961, switching 12403.33 mA calls for a 6117 Ω base resistor (12.91 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "79.65",
+    "3116631",
+    "961"
+   ],
+   "expect": "A 79.65 V drive through a 3116631 Ω resistor pushes 0.03 mA into the base. A beta of 961 scales that to 28.83 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "52.19",
+    "60381.4"
+   ],
+   "expect": "52.19 V across the emitter resistor at 60381.4 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "94.89",
+    "117",
+    "15363.07"
+   ],
+   "expect": "With a 94.89 V drive, a 0.7 V junction drop and a beta of 117, switching 15363.07 mA calls for a 717 Ω base resistor (131.31 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "94.89",
+    "8913564",
+    "117"
+   ],
+   "expect": "A 94.89 V drive through a 8913564 Ω resistor pushes 0.01 mA into the base. A beta of 117 scales that to 1.17 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "94.53",
+    "68397.87"
+   ],
+   "expect": "94.53 V across the emitter resistor at 68397.87 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "89.45",
+    "805",
+    "60772.46"
+   ],
+   "expect": "With a 89.45 V drive, a 0.7 V junction drop and a beta of 805, switching 60772.46 mA calls for a 1176 Ω base resistor (75.49 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "89.45",
+    "3118516",
+    "805"
+   ],
+   "expect": "A 89.45 V drive through a 3118516 Ω resistor pushes 0.03 mA into the base. A beta of 805 scales that to 24.15 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "10.74",
+    "180.59"
+   ],
+   "expect": "10.74 V across the emitter resistor at 180.59 mA works out to 59 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "3.46",
+    "352",
+    "34927.01"
+   ],
+   "expect": "With a 3.46 V drive, a 0.7 V junction drop and a beta of 352, switching 34927.01 mA calls for a 28 Ω base resistor (99.22 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "3.46",
+    "6896932",
+    "352"
+   ],
+   "expect": "A 3.46 V drive through a 6896932 Ω resistor pushes 0 mA into the base. A beta of 352 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "41.4",
+    "72228.61"
+   ],
+   "expect": "41.4 V across the emitter resistor at 72228.61 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "96.15",
+    "750",
+    "88232.83"
+   ],
+   "expect": "With a 96.15 V drive, a 0.7 V junction drop and a beta of 750, switching 88232.83 mA calls for a 811 Ω base resistor (117.64 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "96.15",
+    "7422391",
+    "750"
+   ],
+   "expect": "A 96.15 V drive through a 7422391 Ω resistor pushes 0.01 mA into the base. A beta of 750 scales that to 7.5 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "56.08",
+    "35458.46"
+   ],
+   "expect": "56.08 V across the emitter resistor at 35458.46 mA works out to 2 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "20.8",
+    "306",
+    "76905.07"
+   ],
+   "expect": "With a 20.8 V drive, a 0.7 V junction drop and a beta of 306, switching 76905.07 mA calls for a 80 Ω base resistor (251.32 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "20.8",
+    "1279880",
+    "306"
+   ],
+   "expect": "A 20.8 V drive through a 1279880 Ω resistor pushes 0.02 mA into the base. A beta of 306 scales that to 6.12 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "87.32",
+    "93223.83"
+   ],
+   "expect": "87.32 V across the emitter resistor at 93223.83 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "4.6",
+    "245",
+    "82909.4"
+   ],
+   "expect": "With a 4.6 V drive, a 0.7 V junction drop and a beta of 245, switching 82909.4 mA calls for a 12 Ω base resistor (338.41 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "4.6",
+    "4211868",
+    "245"
+   ],
+   "expect": "A 4.6 V drive through a 4211868 Ω resistor pushes 0 mA into the base. A beta of 245 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "6.34",
+    "97821.92"
+   ],
+   "expect": "6.34 V across the emitter resistor at 97821.92 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "4.96",
+    "605",
+    "16371.55"
+   ],
+   "expect": "With a 4.96 V drive, a 0.7 V junction drop and a beta of 605, switching 16371.55 mA calls for a 157 Ω base resistor (27.06 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "4.96",
+    "3666276",
+    "605"
+   ],
+   "expect": "A 4.96 V drive through a 3666276 Ω resistor pushes 0 mA into the base. A beta of 605 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "4.52",
+    "61246.76"
+   ],
+   "expect": "4.52 V across the emitter resistor at 61246.76 mA works out to 0 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "6.37",
+    "226",
+    "57865.62"
+   ],
+   "expect": "With a 6.37 V drive, a 0.7 V junction drop and a beta of 226, switching 57865.62 mA calls for a 22 Ω base resistor (256.04 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "6.37",
+    "9508756",
+    "226"
+   ],
+   "expect": "A 6.37 V drive through a 9508756 Ω resistor pushes 0 mA into the base. A beta of 226 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "53.06",
+    "53707.77"
+   ],
+   "expect": "53.06 V across the emitter resistor at 53707.77 mA works out to 1 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "28.93",
+    "129",
+    "41283.69"
+   ],
+   "expect": "With a 28.93 V drive, a 0.7 V junction drop and a beta of 129, switching 41283.69 mA calls for a 88 Ω base resistor (320.03 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "28.93",
+    "3127486",
+    "129"
+   ],
+   "expect": "A 28.93 V drive through a 3127486 Ω resistor pushes 0.01 mA into the base. A beta of 129 scales that to 1.29 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "81.36",
+    "53947.61"
+   ],
+   "expect": "81.36 V across the emitter resistor at 53947.61 mA works out to 2 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "13.14",
+    "886",
+    "21121.22"
+   ],
+   "expect": "With a 13.14 V drive, a 0.7 V junction drop and a beta of 886, switching 21121.22 mA calls for a 522 Ω base resistor (23.84 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "13.14",
+    "9822018",
+    "886"
+   ],
+   "expect": "A 13.14 V drive through a 9822018 Ω resistor pushes 0 mA into the base. A beta of 886 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "85.07",
+    "41440.41"
+   ],
+   "expect": "85.07 V across the emitter resistor at 41440.41 mA works out to 2 Ω."
+  },
+  {
+   "fn": "base",
+   "args": [
+    "3.37",
+    "981",
+    "34783.29"
+   ],
+   "expect": "With a 3.37 V drive, a 0.7 V junction drop and a beta of 981, switching 34783.29 mA calls for a 75 Ω base resistor (35.46 mA of base current)."
+  },
+  {
+   "fn": "current",
+   "args": [
+    "3.37",
+    "3406452",
+    "981"
+   ],
+   "expect": "A 3.37 V drive through a 3406452 Ω resistor pushes 0 mA into the base. A beta of 981 scales that to 0 mA of collector current."
+  },
+  {
+   "fn": "emitter",
+   "args": [
+    "63.14",
+    "32710.7"
+   ],
+   "expect": "63.14 V across the emitter resistor at 32710.7 mA works out to 2 Ω."
+  }
+ ],
+ "errors": [
+  [
+   "base",
+   [
+    "0.7",
+    "100",
+    "500"
+   ]
+  ],
+  [
+   "base",
+   [
+    "0.5",
+    "100",
+    "500"
+   ]
+  ],
+  [
+   "current",
+   [
+    "0.69",
+    "1000",
+    "10"
+   ]
+  ],
+  [
+   "base",
+   [
+    "0",
+    "100",
+    "500"
+   ]
+  ],
+  [
+   "base",
+   [
+    "5",
+    "0",
+    "500"
+   ]
+  ],
+  [
+   "base",
+   [
+    "5",
+    "1001",
+    "500"
+   ]
+  ],
+  [
+   "base",
+   [
+    "5",
+    "100",
+    "0"
+   ]
+  ],
+  [
+   "current",
+   [
+    "5",
+    "0",
+    "100"
+   ]
+  ],
+  [
+   "emitter",
+   [
+    "0",
+    "20"
+   ]
+  ],
+  [
+   "emitter",
+   [
+    "0.9",
+    "100000.001"
+   ]
+  ],
+  [
+   "base",
+   [
+    "1.5",
+    "100.5",
+    "500"
+   ]
+  ]
+ ]
+}
